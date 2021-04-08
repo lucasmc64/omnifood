@@ -6,13 +6,15 @@
     box-sizing: border-box;
 }
 
-html {
+html,
+body {
     background-color: #FFFFFF;
     color: #555555;
     font-family: 'Lato', 'Arial', sans-serif;
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
+    overflow-x: hidden;
 }
 
 .clearfix {
@@ -88,7 +90,7 @@ h2::after {
 .long-copy {
     line-height: 145%;
     width: 70%;
-    margin-left: 15%; 
+    margin-left: 15%;
 }
 
 .box p {
@@ -198,9 +200,9 @@ input[type='submit']:active {
 }
 
 header {
-    background-image: 
+    background-image:
         linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-        url('img/hero.jpg');
+        url('img/hero-min.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -213,6 +215,16 @@ header {
     float: left;
     margin-top: 20px;
 }
+
+.logo-black {
+    display: none;
+    height: 50px;
+    width: auto;
+    float: left;
+    margin: 5px 0;
+}
+
+/* =- Main Nav -= */
 
 .main-nav {
     float: right;
@@ -239,6 +251,50 @@ header {
 .main-nav li a:hover,
 .main-nav li a:active {
     border-bottom: 2px solid #E67E22;
+}
+
+/* =- Mobile Nav -= */
+
+.mobile-nav-icon {
+    display: none;
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.mobile-nav-icon i {
+    font-size: 200%;
+    color: #FFFFFF;
+}
+
+/* =- Sticky Nav -= */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 2px 2px #EFEFEF;
+}
+
+.sticky .main-nav {
+    margin-top: 20px;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    padding: 16px 0;
+    color: #555555;
+}
+
+.sticky .logo {
+    display: none;
+}
+
+.sticky .logo-black {
+    display: block;
 }
 
 /* =-=-=-=-=- Features -=-=-=-=-= */
@@ -284,7 +340,7 @@ header {
     opacity: 1;
 }
 
-/* =-=-=-=-=- Hoe it works -=-=-=-=-= */
+/* =-=-=-=-=- How it works -=-=-=-=-= */
 
 .section-steps {
     background-color: #F4F4F4;
@@ -354,9 +410,9 @@ header {
 /* =-=-=-=-=- Testimonials -=-=-=-=-= */
 
 .section-testimonials {
-    background-image: 
+    background-image:
         linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-        url('img/back-customers.jpg');
+        url('img/back-customers-min.jpg');
     background-size: cover;
     background-attachment: fixed;
     color: #FFFFFF;
@@ -445,7 +501,7 @@ cite img {
 
 .plan-box ul li {
     padding: 5px 0;
-} 
+}
 
 /* =-=-=-=-=- Form -=-=-=-=-= */
 
@@ -554,4 +610,24 @@ footer p {
     color: #888888;
     text-align: center;
     margin-top: 20px;
+}
+
+/* =-=-=-=-=- Animations -=-=-=-=-= */
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3 {
+    opacity: 0;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.js--wp-3 {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.js--wp-1.animated,
+.js--wp-2.animated .js--wp-3.animated {
+    opacity: 1;
 }
