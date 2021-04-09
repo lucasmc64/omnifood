@@ -90,19 +90,16 @@
         width: 100%;
         margin: 0 0 4% 0;
     }
-
-    .main-nav {
-        display: none;
-    }
-
+    
     .mobile-nav-icon {
         display: inline-block;
     }
-
+    
     .main-nav {
+        display: none;
         float: left;
-        margin-top: 35px;
-        margin-left: 25px;
+        margin-top: 20px;
+        margin-left: 16px;
     }
 
     .main-nav li {
@@ -118,7 +115,7 @@
     }
     
     .sticky .main-nav {
-        margin-top: 10px;
+        margin-top: 0px;
     }
     
     .sticky .main-nav li a:link,
@@ -155,14 +152,6 @@
         text-align: center;
     }
 
-    .works-step div {
-        width: 40px;
-        height: 40px;
-        padding: 4px;
-        font-size: 120%;
-        margin-right: 15px;
-    }
-
     .works-step {
         margin-bottom: 20px;
     }
@@ -171,6 +160,19 @@
         margin-bottom: 20px;
     }
 
+    .works-step div {
+        width: 40px;
+        height: 40px;
+        padding: 4px;
+        font-size: 120%;
+        margin-right: 15px;
+    }
+
+    .footer-nav,
+    .social-links {
+        float: initial;
+        text-align: center;
+    }
 }
 
 /* Small phones: 0px to 480px */

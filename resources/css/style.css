@@ -280,7 +280,7 @@ header {
 }
 
 .sticky .main-nav {
-    margin-top: 20px;
+    margin-top: 16px;
 }
 
 .sticky .main-nav li a:link,
@@ -353,6 +353,7 @@ header {
 }
 
 .steps-box:last-child {
+    text-align: left;
     margin-top: 70px;
     padding-left: 3%;
 }
@@ -518,6 +519,8 @@ textarea {
     padding: 7px;
     border-radius: 3px;
     border: 1px solid #CCCCCC;
+    background-color: #FFFFFF;
+    color: #333333;
 }
 
 textarea {
